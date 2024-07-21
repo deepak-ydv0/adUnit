@@ -1,0 +1,133 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-image: url("./Assets/background.webp");
+  width: 100%;
+  height: 790px;
+  background-size: cover;
+  position: relative;
+}
+
+.img1 {
+  position: absolute;
+  top: 300px;
+  height: 20%;
+  width: 80%;
+  padding-left: 25px;
+  z-index: 123124;
+}
+.img2 {
+  position: absolute;
+  top: 500px;
+  height: 10%;
+  width: 70%;
+  padding-top: 20px;
+  padding-left: 60px;
+  z-index: 123124;
+}
+
+.navbar {
+  width: 100%;
+  height: 30px;
+  background-color: #320497;
+  color: white;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.nav-image {
+  width: 300px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.home-image,
+.travel-image {
+  width: 55%;
+  align-self: flex-start;
+  margin-top: 25px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.office-image {
+  width: 55%;
+  align-self: flex-end;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.dotUp {
+  width: 55px;
+  position: absolute;
+  top: 250px;
+  rotate: 50deg;
+}
+.dotDown {
+  width: 55px;
+  position: absolute;
+  top: 499px;
+  left: 180px;
+  rotate: -50deg;
+}
+
+.learn-more {
+  position: absolute;
+  top: 640px;
+  right: 15px;
+  width: 33%;
+  align-self: flex-end;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  position: absolute;
+  z-index: 999;
+}
+
+.overlay img {
+  width: 70%;
+  max-width: 390px;
+  height: auto;
+  transition: transform 3s ease;
+  position: absolute;
+  z-index: 1000;
+}
+.overlay video {
+  width: 100%;
+  max-width: 390px;
+  height: auto;
+  transition: transform 3s ease;
+  position: absolute;
+}
+
+.overlay.active {
+  display: flex;
+}
